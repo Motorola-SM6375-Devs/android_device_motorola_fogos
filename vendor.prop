@@ -1,11 +1,11 @@
 # Bluetooth
-bluetooth.device.default_name=Motorola g200 5G
+bluetooth.device.default_name=moto g34 5G
 
 # Camera
-persist.vendor.camera.physical.num=4
+persist.vendor.camera.physical.num=3
 
 # Motorola
 ro.mot.build.customerid=global
 
 # NFC
-ro.vendor.hw.nfc=st
+persist.vendor.nfc.config_secfile_name=libnfc-sec-nci.conf

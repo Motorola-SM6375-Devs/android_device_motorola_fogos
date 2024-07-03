@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.xpeng"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.fogos"
 
 #include "BiometricsFingerprint.h"
 

@@ -14,8 +14,8 @@ fi
 
 set -e
 
-export DEVICE=xpeng
-export DEVICE_COMMON=sm7325-common
+export DEVICE=fogos
+export DEVICE_COMMON=sm6375-common
 export VENDOR=motorola
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"

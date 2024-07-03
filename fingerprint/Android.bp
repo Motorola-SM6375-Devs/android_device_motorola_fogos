@@ -4,9 +4,9 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 cc_binary {
-    name: "android.hardware.biometrics.fingerprint@2.1-service.xpeng",
-    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.1-service.xpeng.xml"],
-    init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.xpeng.rc"],
+    name: "android.hardware.biometrics.fingerprint@2.1-service.fogos",
+    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.1-service.fogos.xml"],
+    init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.fogos.rc"],
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     srcs: ["service.cpp", "BiometricsFingerprint.cpp"],

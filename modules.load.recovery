@@ -1,7 +1,12 @@
-msm_drm.ko
+utags.ko
 mmi_relay.ko
-sensors_class.ko
-touchscreen_mmi.ko
-mmi_annotate.ko
 mmi_info.ko
-nova_0flash_mmi.ko
+mmi_annotate.ko
+sensors_class.ko
+moto_f_usbnet.ko
+watchdogtest.ko
+qpnp_adaptive_charge.ko
+sensors_class.ko
+ilitek_v3_mmi.ko
+mmi_sys_temp.ko
+mmi-smbcharger-iio.ko

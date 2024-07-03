@@ -4,9 +4,9 @@
 // SPDX-License-Identifier: Apache-2.0
 
 cc_binary {
-    name: "vendor.lineage.touch@1.0-service.xpeng",
-    vintf_fragments: ["vendor.lineage.touch@1.0-service.xpeng.xml"],
-    init_rc: ["vendor.lineage.touch@1.0-service.xpeng.rc"],
+    name: "vendor.lineage.touch@1.0-service.fogos",
+    vintf_fragments: ["vendor.lineage.touch@1.0-service.fogos.xml"],
+    init_rc: ["vendor.lineage.touch@1.0-service.fogos.rc"],
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     proprietary: true,

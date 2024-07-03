@@ -1,5 +1,0 @@
-runtime_resource_overlay {
-    name: "SystemUIResXpeng",
-    sdk_version: "current",
-    vendor: true
-}
