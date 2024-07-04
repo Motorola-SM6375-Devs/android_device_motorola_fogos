@@ -9,3 +9,6 @@ ro.mot.build.customerid=global
 
 # NFC
 persist.vendor.nfc.config_secfile_name=libnfc-sec-nci.conf
+
+# Surfaceflinger
+ro.sf.lcd_density=280
