@@ -2,13 +2,6 @@
 import /vendor/etc/init/hw/init.nfc.sec.rc
 
 on post-fs
-    # "Tap to wake" gesture
-    chown root input /sys/class/sensors/dt-gesture/enable
-    chmod 0660 /sys/class/sensors/dt-gesture/enable
-    chown root input /sys/class/sensors/dt-gesture/poll_delay
-    chmod 0660 /sys/class/sensors/dt-gesture/poll_delay
-
-on post-fs
     chown system system /sys/devices/platform/soc/4804000.ufshc/clkgate_enable
     chown system system /sys/devices/platform/soc/4804000.ufshc/devfreq/4804000.ufshc/min_freq
 
@@ -84,6 +77,9 @@ on boot
     chown root input /sys/class/sensors/Moto\ CapSense\ Ch3/poll_delay
     chown root input /sys/class/sensors/Moto\ CapSense\ Ch4/enable
     chown root input /sys/class/sensors/Moto\ CapSense\ Ch4/poll_delay
+    # Change ownership for touch gesture
+    chown root input /sys/class/sensors/dt-gesture/enable
+    chown root input /sys/class/sensors/dt-gesture/poll_delay
     # touch
     chown system system /sys/class/touchscreen/primary/interpolation
     chmod 0660 /sys/class/touchscreen/primary/interpolation
