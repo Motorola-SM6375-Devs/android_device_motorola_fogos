@@ -70,13 +70,20 @@ on boot
     # change permission for capsensor
     chown system system /sys/class/capsense/reset
     chown system system /sys/class/capsense/int_state
+    chown system system /sys/class/capsense/mode
     chown radio system /sys/class/capsense/reg
     chown radio system /sys/class/capsense/fw_download_status
-    chown system system /sys/class/capsense/mode
-    chmod 0660 /sys/class/capsense/reset
-    chmod 0660 /sys/class/capsense/int_state
-    chmod 0660 /sys/class/capsense/reg
-    chmod 0660 /sys/class/capsense/fw_download_status
+    # Change ownership for capsensor
+    chown root input /sys/class/sensors/Moto\ CapSense\ Ch0/enable
+    chown root input /sys/class/sensors/Moto\ CapSense\ Ch0/poll_delay
+    chown root input /sys/class/sensors/Moto\ CapSense\ Ch1/enable
+    chown root input /sys/class/sensors/Moto\ CapSense\ Ch1/poll_delay
+    chown root input /sys/class/sensors/Moto\ CapSense\ Ch2/enable
+    chown root input /sys/class/sensors/Moto\ CapSense\ Ch2/poll_delay
+    chown root input /sys/class/sensors/Moto\ CapSense\ Ch3/enable
+    chown root input /sys/class/sensors/Moto\ CapSense\ Ch3/poll_delay
+    chown root input /sys/class/sensors/Moto\ CapSense\ Ch4/enable
+    chown root input /sys/class/sensors/Moto\ CapSense\ Ch4/poll_delay
     # touch
     chown system system /sys/class/touchscreen/primary/interpolation
     chmod 0660 /sys/class/touchscreen/primary/interpolation
