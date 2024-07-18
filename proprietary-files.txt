@@ -295,6 +295,7 @@ vendor/lib64/sensors.moto.so
 vendor/lib64/sensors.ssc.so
 
 # Sensors Configs
+vendor/bin/capsense_reset
 vendor/etc/sensors/config/icm4x6xa.json
 vendor/etc/sensors/config/mot_camgest.json
 vendor/etc/sensors/config/mot_tap.json
