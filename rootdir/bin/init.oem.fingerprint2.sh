@@ -17,6 +17,9 @@ function log {
     echo "$script_name: $*" > /dev/kmsg
 }
 
+PROP_GKI_PATH=ro.vendor.mot.gki.path
+GKI_PATH=$(getprop $PROP_GKI_PATH)
+
 # for new projects, only need to config varible vendor_list,kernel_so_list,kernel_so_name_list,hal_list
 # vendor_list: the array contains the sensor name, it will be used for system properties.
 # kernel_so_list: the array contains the kernel so's absolute path. It will be used at insmod.
@@ -25,7 +28,7 @@ function log {
 #
 # note: all arrays should have the same size.
 vendor_list=('goodix' 'fpc')
-kernel_so_list=("/vendor/lib/modules/goodix_fod_mmi.ko" "/vendor/lib/modules/fpc1020_mmi.ko")
+kernel_so_list=("/vendor/lib/modules/$GKI_PATH/goodix_fod_mmi.ko" "/vendor/lib/modules/$GKI_PATH/fpc1020_mmi.ko")
 kernel_so_name_list=("goodix_fod_mmi.ko" "fpc1020_mmi.ko")
 dev_node_list=("/dev/goodix_fp" "/sys/class/fingerprint/fpc1020/irq")
 hal_list=('goodix_hal' 'fps_hal')

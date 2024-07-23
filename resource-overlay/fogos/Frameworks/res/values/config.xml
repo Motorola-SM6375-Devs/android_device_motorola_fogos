@@ -64,7 +64,7 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>2</item>
+        <item>3</item>
         <item>10</item>
         <item>20</item>
         <item>50</item>
@@ -77,17 +77,17 @@
         <item>180</item>
         <item>180</item>
         <item>180</item>
+        <item>210</item>
+        <item>210</item>
+        <item>210</item>
+        <item>220</item>
         <item>225</item>
-        <item>270</item>
-        <item>300</item>
-        <item>315</item>
-        <item>330</item>
+        <item>225</item>
         <item>350</item>
-        <item>380</item>
-        <item>420</item>
-        <item>450</item>
-        <item>450</item>
-        <item>450</item>
+        <item>400</item>
+        <item>400</item>
+        <item>400</item>
+        <item>400</item>
     </array>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
@@ -253,7 +253,21 @@
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <array name="config_longPressVibePattern">
         <item>0</item>
-        <item>67</item>
+        <item>60</item>
+    </array>
+
+    <!-- Vibrator pattern for feedback on fp authentication error -->
+    <array name="config_fpErrorVibePattern">
+        <item>0</item>
+        <item>60</item>
+        <item>100</item>
+        <item>60</item>
+    </array>
+
+    <!-- Vibrator pattern for feedback when selecting an hour/minute tick of a Clock -->
+    <array name="config_clockTickVibePattern">
+        <item>0</item>
+        <item>40</item>
     </array>
 
     <!-- Vibrator pattern for feedback about touching a virtual key -->

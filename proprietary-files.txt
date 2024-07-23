@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from fogos_g-user 14 U1UG34M.23-82-2 e82316 release-keys
+# All unpinned blobs are extracted from fogos_g-user 14 U1UGS34M.23-82-2-2 0c9cb9 release-keys
 
 # ACDB-data
 vendor/etc/acdbdata/nn_ns_models/candidate__2.7.1.31__3.0.0__eai_1.10_enpu1.pmd
@@ -247,7 +247,6 @@ vendor/bin/hw/fpc_ident:vendor/bin/fpc_ident
 vendor/bin/hw/goodix_ident:vendor/bin/goodix_ident
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-goodixservice.rc
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc
-vendor/firmware/tm_goodix_cfg_group.bin
 vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/libgf_ca.so
@@ -266,6 +265,7 @@ vendor/firmware/fs1815.fsm
 vendor/firmware/goodix-tm-gt9916S-23051702-646483c4-fogos.bin
 vendor/firmware/ILITEK_FW
 vendor/firmware/sec_s3nrn4v_firmware.bin
+vendor/firmware/tm_goodix_cfg_group.bin
 
 # HotwordEnrollment
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk

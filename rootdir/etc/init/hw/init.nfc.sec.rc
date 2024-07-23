@@ -9,4 +9,4 @@ on post-fs-data
     chmod 0770 /dev/sec-nfc
 
 #    chown nfc nfc /data/nfc 
-#    chmod 0770 /data/nfc
+#    chmod 0770 /data/nfc 
