@@ -4,6 +4,11 @@ bluetooth.device.default_name=moto g34 5G
 # Camera
 persist.vendor.camera.physical.num=3
 
+# Display
+ro.vendor.display.svi=1
+vendor.display.svi.config=1
+vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
+
 # Motorola
 ro.mot.build.customerid=global
 
