@@ -56,6 +56,11 @@ PRODUCT_PACKAGES += \
 # LiveDisplay
 $(call soong_config_set_bool,livedisplay_sysfs,enable_ab,true)
 
+# Lineage Health
+$(call soong_config_set,lineage_health,fast_charge_node,/sys/class/qcom-battery/restrict_chg)
+$(call soong_config_set,lineage_health,fast_charge_value_none,1)
+$(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.sec \
