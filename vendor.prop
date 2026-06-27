@@ -1,5 +1,5 @@
 # Audio
-persist.vendor.audio.fluence.voicecomm=true
+persist.vendor.audio.fluence.voicecomm=false
 persist.vendor.audio.voicecall.speaker.stereo=true
 
 # Camera
